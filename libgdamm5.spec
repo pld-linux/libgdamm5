@@ -8,12 +8,12 @@
 Summary:	C++ wrappers for libgda 5.x
 Summary(pl.UTF-8):	Interfejsy C++ dla libgda 5.x
 Name:		libgdamm5
-Version:	4.99.6
+Version:	4.99.7
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgdamm/4.99/libgdamm-%{version}.tar.xz
-# Source0-md5:	72469f99c4c6d1cc3de1e5ca6f4a8529
+# Source0-md5:	d5463fd04906de8ebd8c6b1d28a48d2f
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 %{?with_apidocs:BuildRequires:	doxygen}
