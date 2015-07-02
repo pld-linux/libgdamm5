@@ -4,12 +4,12 @@
 # Conditional build:
 %bcond_without	apidocs		# don't generate documentation with doxygen
 %bcond_without	static_libs	# don't build static library
-#
+
 Summary:	C++ wrappers for libgda 5.x
 Summary(pl.UTF-8):	Interfejsy C++ dla libgda 5.x
 Name:		libgdamm5
 Version:	4.99.8
-Release:	2
+Release:	3
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgdamm/4.99/libgdamm-%{version}.tar.xz
@@ -64,6 +64,9 @@ Statyczna biblioteka libgdamm5.
 Summary:	libgdamm 5 API documentation
 Summary(pl.UTF-8):	Dokumentacja API libgdamm 5
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 libgdamm 5 API documentation.
