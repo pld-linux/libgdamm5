@@ -8,23 +8,23 @@
 Summary:	C++ wrappers for libgda 5.x
 Summary(pl.UTF-8):	Interfejsy C++ dla libgda 5.x
 Name:		libgdamm5
-Version:	4.99.8
-Release:	3
+Version:	4.99.10
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libgdamm/4.99/libgdamm-%{version}.tar.xz
-# Source0-md5:	6e9282d8c21487040865f6e4628c0c94
+# Source0-md5:	0557974af88553938c355178b4fe5cdf
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 %{?with_apidocs:BuildRequires:	doxygen}
-BuildRequires:	glibmm-devel >= 2.28.0
+BuildRequires:	glibmm-devel >= 2.46.1
 BuildRequires:	libgda5-devel >= 5.0.2
 BuildRequires:	libtool >= 2:1.5
-BuildRequires:	mm-common >= 0.9.5
+BuildRequires:	mm-common >= 0.9.8
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	glibmm >= 2.28.0
+Requires:	glibmm >= 2.46.1
 Requires:	libgda5 >= 5.0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +39,7 @@ Summary:	Header files for libgdamm5 library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libgdamm5
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glibmm-devel >= 2.28.0
+Requires:	glibmm-devel >= 2.46.1
 Requires:	libgda5-devel >= 5.0.2
 
 %description devel
