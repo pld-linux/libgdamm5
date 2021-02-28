@@ -64,9 +64,7 @@ Statyczna biblioteka libgdamm5.
 Summary:	libgdamm 5 API documentation
 Summary(pl.UTF-8):	Dokumentacja API libgdamm 5
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 libgdamm 5 API documentation.
